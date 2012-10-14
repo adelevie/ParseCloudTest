@@ -69,4 +69,4 @@ Finished tests in 0.616816s, 1.6212 tests/s, 1.6212 assertions/s.
 
 ### Questions
 
-File an [issue](https://github.com/adelevie/ParseCloudTest/issues/new), [email](mailto:adelevie@gmail.com) me, or contact me on (Twitter)[http://twitter.com/adelevie].
+File an [issue](https://github.com/adelevie/ParseCloudTest/issues/new), [email](mailto:adelevie@gmail.com) me, or contact me on [Twitter](http://twitter.com/adelevie).
