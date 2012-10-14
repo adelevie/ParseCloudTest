@@ -2,6 +2,10 @@
 
 This is an example project demonstrating a basic testing setup for Parse Cloud Code. Tests are written in Ruby using Test::Unit (easily changed).
 
+## Installation
+
+There's no "one and done" way to install, but you can always just copy the relevant files into your application. Be sure to copy the `Rakefile` and everything in the `test` folder (and replace with your own tests!).
+
 ## Guide
 
 This project is experimental, but it would probably be best for files and test functions in the `test` folder to map one-to-one to files and cloud functions in the `cloud` folder.
@@ -26,7 +30,7 @@ class TestMain < Test::Unit::TestCase
 end
 ```
 
-I'm using [parse-ruby-client](http://github.com/adelevie/parse-ruby-client) to execute the cloud functions. The basic usage is:
+This setup uses [parse-ruby-client](http://github.com/adelevie/parse-ruby-client) to execute the cloud functions. The basic usage is:
 
 ```ruby
 function = Parse::Cloud::Function.new("nameOfFunction")
@@ -47,3 +51,22 @@ class TestMain < Test::Unit::TestCase
   end
 end
 ```
+
+And to run the tests:
+
+```
+$ rake test
+Run options: 
+
+# Running tests:
+
+.
+
+Finished tests in 0.616816s, 1.6212 tests/s, 1.6212 assertions/s.
+
+1 tests, 1 assertions, 0 failures, 0 errors, 0 skips
+```
+
+### Questions
+
+File an [issue](https://github.com/adelevie/ParseCloudTest/issues/new), [email](mailto:adelevie@gmail.com) me, or contact me on (Twitter)[http://twitter.com/adelevie].
