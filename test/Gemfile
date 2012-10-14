@@ -1,0 +1,3 @@
+source :rubygems
+
+gem "parse-ruby-client", "~> 0.1.5"
