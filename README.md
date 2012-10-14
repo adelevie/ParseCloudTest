@@ -20,9 +20,9 @@ In `test`, create a file called `test_main.rb`. First we'll add some boilerplate
 require 'helper'
 
 class TestMain < Test::Unit::TestCase
-	def test_trivial
-		# test will go here
-	end
+  def test_trivial
+    # test will go here
+  end
 end
 ```
 
@@ -39,11 +39,11 @@ Putting it all together:
 require 'helper'
 
 class TestMain < Test::Unit::TestCase
-	def test_trivial
-		function = Parse::Cloud::Function.new("trivial")
-		params = {"foo" => "bar"}
-		result = function.call(params)
-		assert_equal result, params
-	end
+  def test_trivial
+    function = Parse::Cloud::Function.new("trivial")
+    params = {"foo" => "bar"}
+    result = function.call(params)
+    assert_equal result, params
+  end
 end
 ```
